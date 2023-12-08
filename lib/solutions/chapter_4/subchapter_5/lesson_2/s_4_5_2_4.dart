@@ -42,9 +42,10 @@ class _ShowHideNameWidget extends State<ShowHideNameWidget> {
       const ShowHideNameWidget({super.key});
       
         @override
-        State<StatefulWidget> createState() {
+        State<StatefulWidget> createState() => const ShowHideNameWidget();
           // TODO: implement createStat
-          return _ShowHideNameWidget;
+        
+;
         }
     }
 
