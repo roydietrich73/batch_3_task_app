@@ -1,54 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:task_app/private/features/tasks/data/tasks.dart';
 
 class S4524 extends StatelessWidget {
   const S4524({Key? key}) : super(key: key);
-
+  @override
+  Widget build(BuildContext context) {
+    return const ShowHideName();
   }
+}
 
+class ShowHideName extends StatefulWidget {
+  const ShowHideName({super.key});
 
+  @override
+  State<ShowHideName> createState() => _ShowHideNameState();
+}
 
-
-  
-
-class _ShowHideNameWidget extends State<ShowHideNameWidget> {
+class _ShowHideNameState extends State<ShowHideName> {
   String name = "";
   bool isVisible = false;
 
   @override
   Widget build(BuildContext context) {
-    var onPressed;
     return Column(
-      children: [Center(child: Text(name)),
-    ElevatedButton(
-      onPressed: () {  
-          setState((){
-             isVisible = !isVisible;
-             if (isVisible) {
-               name = "Roy";
-             }else{
-               name = "";
-            }
-          });
-         },
+      children: [
+        Center(child: Text(name)),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              isVisible = !isVisible;
+              if (isVisible) {
+                name = "Roy";
+              } else {
+                name = "";
+              }
+            });
+          },
           child: const Text("Name anzeigen"),
-         )
-        ],
-      );
-    }
+        )
+      ],
+    );
   }
-    
-    class ShowHideNameWidget extends StatefulWidget{
-      const ShowHideNameWidget({super.key});
-      
-        @override
-        State<StatefulWidget> createState() => const ShowHideNameWidget();
-          // TODO: implement createStat
-        
-;
-        }
-    }
-
-
-
-  
+}

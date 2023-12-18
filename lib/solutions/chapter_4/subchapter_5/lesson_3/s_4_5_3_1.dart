@@ -1,42 +1,49 @@
-import 'package:flutter/material.dart';
 
-class S4531 extends StatelessWidget {
-  const S4531({Key? key}) : super(key: key);
-  @override
+
+import 'package:flutter/material.dart';
+void main(){
+  runApp(S4531());
+}
+ class S4531 extends StatelessWidget {
+ const S4531({Key? key}) : super(key: key);
+ @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+   return MyColumn();
   }
 }
-class ColumnRD extends StatelessWidget {
- 
 
-  const ColumnRD({super.key});
-  
- 
-
+ class MyColumn extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    
-    return  Column(
-      children:  [
-         Container(
-          child:  
-          alignment: Aligment.center 
-          height: 100,
-          width: 100,
-          color: Colors.blueGrey),
+    return Column(
+      children: [
         Container(
-          child: 
-          alignment: Alignment.Center(height: 100, width:100),
-          color: Colors.blue),
+        width: 100,
+        height: 100,
+        color: Colors.blueGrey),
         Container(
-          child:  
-          alignment: Alignment.Center(height: 100, width:100),
-          color: Colors.cyan),  
+        width: 100,
+        height: 100,
+        color: Colors.blue),
+        Container(
+        width: 100,
+        height: 100,
+        color: Colors.cyan)
       ]
     );
   }
 }
+ 
+
+
+
+
+    
+  
+      
+    
+  
+
 
  
 

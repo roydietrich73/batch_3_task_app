@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 
-
-void main(){
+void main() {
   sayHello();
 }
-void sayHello(){
-  print("Hello world");
-  
+
+void sayHello() {
+  debugPrint("Hello world");
 }
