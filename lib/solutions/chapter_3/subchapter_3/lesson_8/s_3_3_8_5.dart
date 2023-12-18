@@ -4,7 +4,18 @@ bool isPalindrome(String input) {
   // Lösung hier einfügen
   throw UnimplementedError();
 }
+/*
+anna true; spiel false; otto true
 
+String; bool
+
+bool isPalidrom(String word) {
+  
+}
+
+
+
+*/
 class S3385 extends StatefulWidget {
   const S3385({Key? key}) : super(key: key);
 
