@@ -4,7 +4,7 @@ class S4532 extends StatelessWidget {
   const S4532({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return TextStyle();
+    return const TextStyle();
   }
 }
 class TextStyle extends StatelessWidget {
@@ -12,9 +12,9 @@ class TextStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const Center(
+        Center(
          child: Text("AppAkademie"),
         )
         

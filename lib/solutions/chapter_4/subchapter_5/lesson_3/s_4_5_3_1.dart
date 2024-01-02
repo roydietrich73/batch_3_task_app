@@ -1,18 +1,18 @@
 
 
 import 'package:flutter/material.dart';
-void main(){
-  runApp(S4531());
-}
+
  class S4531 extends StatelessWidget {
  const S4531({Key? key}) : super(key: key);
  @override
   Widget build(BuildContext context) {
-   return MyColumn();
+   return const MyColumn();
   }
 }
 
  class MyColumn extends StatelessWidget{
+  const MyColumn({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
