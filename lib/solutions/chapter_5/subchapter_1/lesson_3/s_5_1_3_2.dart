@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 class S5132 extends StatelessWidget {
   const S5132({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return MyExpandableText();
-  }
-}
+ 
+  
+
  @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +19,7 @@ class S5132 extends StatelessWidget {
       ),
     );
   }
-
+}
 
 class MyExpandableText extends StatefulWidget {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 
-
+class S5131 extends StatelessWidget {
+  const S5131({Key? key}) : super(key: key);
 
 
   @override
@@ -11,8 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
       home: Scaffold(
         appBar: AppBar(
           title: Text('Google Fonts Beispiel'),
-          centerTitle: true,
-        ),
+          centerTitle: true,),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -37,6 +36,7 @@ import 'package:google_fonts/google_fonts.dart';
             ],
           ),
         ),
-      ),
+      )
     );
   }
+}
