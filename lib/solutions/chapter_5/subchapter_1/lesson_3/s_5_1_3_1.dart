@@ -10,7 +10,7 @@ class S5131 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Google Fonts Beispiel'),
+          title: const Text('Google Fonts Beispiel'),
           centerTitle: true,),
         body: Center(
           child: Column(

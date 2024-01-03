@@ -10,10 +10,10 @@ class S5132 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Text-Widget mit Ausklappen'),
+          title: const Text('Text-Widget mit Ausklappen'),
           centerTitle: true,
         ),
-        body: Center(
+        body: const Center(
           child: MyExpandableText(),
         ),
       ),
@@ -22,7 +22,10 @@ class S5132 extends StatelessWidget {
 }
 
 class MyExpandableText extends StatefulWidget {
+  const MyExpandableText({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _MyExpandableTextState createState() => _MyExpandableTextState();
 }
 
@@ -40,7 +43,7 @@ class _MyExpandableTextState extends State<MyExpandableText> {
       child: SizedBox(
         width: 200.0,
         height: isExpanded ? null : 30.0,
-        child: Text(
+        child: const Text(
           'Hier ist ein längerer Text, der breiter ist als die Box und sich bei einem Klick ausklappt.',
           overflow: TextOverflow.fade,
         ),
