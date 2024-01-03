@@ -33,27 +33,43 @@ class S5112 extends StatelessWidget {
 
               // Name
               const Text(
-                'Name: Diana das Lama',
+                'Name',
                 style: TextStyle(fontSize: 18.0),
+              ),
+              const Text(
+                'Diana das Llama',
+                style: TextStyle(fontSize: 14.0),
               ),
 
               // Gewicht
               const Text(
-                'Gewicht: 120 kg',
+                'Gewicht',
                 style: TextStyle(fontSize: 18.0),
+              ),
+              const Text(
+                '120 kg',
+                style: TextStyle(fontSize: 14.0),
               ),
 
               // Größe
               const Text(
-                'Größe: 180 cm',
+                'Größe',
                 style: TextStyle(fontSize: 18.0),
+              ),
+              const Text(
+                '1,80 m',
+                style: TextStyle(fontSize: 14.0),
               ),
 
               // Lieblingsessen
               const Text(
-                'Lieblingsessen: Gras',
+                'Lieblingsessen',
                 style: TextStyle(fontSize: 18.0),
               ),
+              const Text(
+                'Gras',
+                style: TextStyle(fontSize: 14.0),
+              )
             ],
           ),
         ),

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class S5111 extends StatelessWidget {
-  const S5111({Key? key}) : super(key: key);
+   const S5111({Key? key}) : super(key: key);
 
-  
+// bool isSwitched = false; 
 
   @override
    Widget build(BuildContext context){
    return Scaffold(
     appBar: AppBar(
-    title: Text('Hello World'),
+    title: const Text('Hello World'),
     centerTitle: true,
     ),
     body: Center(
@@ -21,6 +21,7 @@ class S5111 extends StatelessWidget {
             height:100.0,
             color: Colors.red,
       ),
+      const SizedBox(width: 50,),
       Container(
         width: 100.0,
         height: 100.0,
@@ -29,7 +30,17 @@ class S5111 extends StatelessWidget {
 
         ],
       ),
-      ) ,
-      );
-}
+     /*const SizedBox(
+        height: 20,
+        ),
+      Switch(activeColor: Colors.amber.shade800,
+      value: _commentEnabled,
+      onChanged: (value) {
+        setState((){
+          isSwitched = value;
+        });
+     */
+      )
+    );    
+  }
 }
