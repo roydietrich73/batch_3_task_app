@@ -7,35 +7,30 @@ class S5131 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-        appBar: AppBar(
-          title: const Text('Google Fonts Beispiel'),
-          centerTitle: true,),
-        body: Center(
-          child: Column(
+    return   Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'Schriftart 1',
-                style: GoogleFonts.lato(fontSize: 20.0),
+                style: GoogleFonts.lato(fontSize: 20.0, color: Colors.red),
               ),
               Text(
                 'Schriftart 2',
-                style: GoogleFonts.roboto(fontSize: 20.0),
+                style: GoogleFonts.roboto(fontSize: 20.0,color: Colors.amber),
               ),
               Text(
                 'Schriftart 3',
-                style: GoogleFonts.pacifico(fontSize: 20.0),
+                style: GoogleFonts.pacifico(fontSize: 20.0, color: Colors.blue),
               ),
               Text(
                 'Schriftart 4',
-                style: GoogleFonts.indieFlower(fontSize: 20.0),
+                style: GoogleFonts.indieFlower(fontSize: 20.0, color: Colors.green),
               ),
             ],
-          ),
-        ),
+          );
+        
       
-    );
+    
   }
 }
