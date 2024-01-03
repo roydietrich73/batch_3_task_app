@@ -7,8 +7,7 @@ class S5132 extends StatelessWidget {
 
  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('Text-Widget mit Ausklappen'),
           centerTitle: true,
@@ -16,7 +15,7 @@ class S5132 extends StatelessWidget {
         body: const Center(
           child: MyExpandableText(),
         ),
-      ),
+      
     );
   }
 }

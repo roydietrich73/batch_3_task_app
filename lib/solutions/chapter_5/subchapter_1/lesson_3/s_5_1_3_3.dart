@@ -8,8 +8,7 @@ class S5133 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: const Text('Stilvoller Container'),
           centerTitle: true,
@@ -17,7 +16,7 @@ class S5133 extends StatelessWidget {
         body: const Center(
           child: StylishContainer(),
         ),
-      ),
+      
     );
   }
 }
