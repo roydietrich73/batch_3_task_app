@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class S5511 extends StatelessWidget {
@@ -13,13 +15,15 @@ class S5511 extends StatelessWidget {
     return Future.delayed(const Duration(milliseconds: 500));
   }
 }
+// ignore: use_key_in_widget_constructors
 class AsyncMethods extends StatelessWidget {
  Future<void> ersteAsyncMethode() async{
-  await Future.delayed(Duration(seconds: 2));
+  await Future.delayed(const Duration(seconds: 2));
+  // ignore: avoid_print
   print('Erste asyncrone Methode');
  }
  Future<void> zweiteAsyncMethode() async {
-  await Future.delayed(Duration(seconds: 3));
+  await Future.delayed(const Duration(seconds: 3));
   print('Zweite asynchrone Methode');
  }
  Future<void> beideAsyncMethoden() async {
@@ -37,7 +41,9 @@ class AsyncMethods extends StatelessWidget {
       child: ElevatedButton(
         onPressed:()async{
           await beideAsyncMethoden();
-            print('Fertig');
+             
+              print('Fertig');
+            
           },
         
         child: const Text('Async Methoden ausführen'),

@@ -37,8 +37,3 @@ flutter:
     - assets/images/tasks/
     - assets/animations/
     
-dependencies:
-  flutter:
-    sdk: flutter
-  image_picker: ^0.8.4
-  cached_network_image: ^5.0.2
