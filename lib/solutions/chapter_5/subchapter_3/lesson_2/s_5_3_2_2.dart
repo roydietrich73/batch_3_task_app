@@ -12,13 +12,13 @@ class S5322 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('CachedNetworkImage Beispiel'),
+          title: const Text('CachedNetworkImage Beispiel'),
         ),
         body: Center(
           child: CachedNetworkImage(
             imageUrl: imageUrl,
-            placeholder: (context, url) => CircularProgressIndicator(),
-            errorWidget: (context, url, error) => Icon(Icons.error),
+            placeholder: (context, url) => const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => const Icon(Icons.error),
           ),
         ),
       ),
