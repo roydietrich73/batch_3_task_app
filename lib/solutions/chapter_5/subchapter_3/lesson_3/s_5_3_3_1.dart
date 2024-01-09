@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison
+// ignore_for_file: unnecessary_null_comparison, prefer_typing_uninitialized_variables
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ class S5331 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Bild auswählen oder aufnehmen'),
+          title: const Text('Bild auswählen oder aufnehmen'),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -23,20 +23,20 @@ class S5331 extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () => _getImage(ImageSource.camera),
-                  icon: Icon(Icons.camera),
+                  icon: const Icon(Icons.camera),
                 ),
                 IconButton(
                   onPressed: () => _getImage(ImageSource.gallery),
-                  icon: Icon(Icons.photo),
+                  icon: const Icon(Icons.photo),
                 ),
               ],
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             imagePath != null
                 ? CachedNetworkImage(
                     imageUrl: imagePath!,
-                    placeholder: (context, url) => CircularProgressIndicator(),
-                    errorWidget: (context, url, error) => Icon(Icons.error),
+                    placeholder: (context, url) => const CircularProgressIndicator(),
+                    errorWidget: (context, url, error) => const Icon(Icons.error),
                   )
                 : Container(),
           ],
