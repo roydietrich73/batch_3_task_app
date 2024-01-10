@@ -14,15 +14,22 @@ class S5511 extends StatelessWidget {
   //
 }
 // ignore: use_key_in_widget_constructors
-class AsyncMethods extends StatelessWidget {
+class AsyncMethods extends StatefulWidget {
+  @override
+  State<AsyncMethods> createState() => _AsyncMethodsState();
+}
+
+class _AsyncMethodsState extends State<AsyncMethods> {
  Future<void> ersteAsyncMethode() async{
   await Future.delayed(const Duration(seconds: 2));  
   print('Erste asyncrone Methode');
  }
+
  Future<void> zweiteAsyncMethode() async {
   await Future.delayed(const Duration(seconds: 3));
   print('Zweite asynchrone Methode');
  }
+
  Future<void> beideAsyncMethoden() async {
   await ersteAsyncMethode();
   await zweiteAsyncMethode();
