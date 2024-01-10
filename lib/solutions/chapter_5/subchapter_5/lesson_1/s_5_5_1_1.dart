@@ -11,15 +11,12 @@ class S5511 extends StatelessWidget {
 
   // ignoriere für den Moment den Inhalt dieser Methode
   // nutze "await warteKurz();" in deinem Code, um einen Moment zu warten
-  Future<void> warteKurz() {
-    return Future.delayed(const Duration(milliseconds: 500));
-  }
+  //
 }
 // ignore: use_key_in_widget_constructors
 class AsyncMethods extends StatelessWidget {
  Future<void> ersteAsyncMethode() async{
-  await Future.delayed(const Duration(seconds: 2));
-  // ignore: avoid_print
+  await Future.delayed(const Duration(seconds: 2));  
   print('Erste asyncrone Methode');
  }
  Future<void> zweiteAsyncMethode() async {
@@ -33,23 +30,18 @@ class AsyncMethods extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-      title: const Text('ElevatedButton'),
-    ),
-    body: Center(
-      child: ElevatedButton(
+    return Column(
+      children: [
+       ElevatedButton(
         onPressed:()async{
-          await beideAsyncMethoden();
-             
-              print('Fertig');
+          await beideAsyncMethoden();     
+          print('Fertig');
             
           },
         
         child: const Text('Async Methoden ausführen'),
-        ),
-        ),
-    );
-    
+      ),
+      ],
+    );    
   }
 }
