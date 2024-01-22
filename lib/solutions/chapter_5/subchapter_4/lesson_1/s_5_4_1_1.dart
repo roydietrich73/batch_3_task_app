@@ -25,18 +25,18 @@ class MyCatchPage extends StatelessWidget {
         title: const Text('Try Catch'),
     ),
     body: Center(
-      child: ElevatedButton(
-        onPressed: () {
-        try{
-          print(nullString.length);
-        }catch (error) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fehler: $error'),
-          ));
-        }
-        },
-        child: const Text('Klicken für einen Fehler!'),
-        ),
-      ),
+          child: ElevatedButton(
+            onPressed: () {
+            try{
+              print(nullString.length);
+            }catch (error) {
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fehler: $error'),
+              ));
+            }
+            },
+            child: const Text('Klicken für einen Fehler!'),
+            ),
+          ),
     );
   }
 }
