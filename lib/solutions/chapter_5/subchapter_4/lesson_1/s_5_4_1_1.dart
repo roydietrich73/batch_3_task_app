@@ -30,7 +30,9 @@ class MyCatchPage extends StatelessWidget {
             try{
               print(nullString.length);
             }catch (error) {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fehler: $error'),
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Fehler: $error'),
               ));
             }
             },
