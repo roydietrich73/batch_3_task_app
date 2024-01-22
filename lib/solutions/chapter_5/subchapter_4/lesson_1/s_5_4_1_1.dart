@@ -34,6 +34,12 @@ class MyCatchPage extends StatelessWidget {
               ));
             }
             },
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.purple,
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                textStyle: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold)),
             child: const Text('Klicken für einen Fehler!'),
             ),
           ),
